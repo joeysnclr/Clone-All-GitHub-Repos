@@ -3,7 +3,7 @@ import methods
 
 args = sys.argv[1:] # first arg is filename
 if len(args) < 1:
-    print("Please provide an accessToken as an.")
+    print("Please provide an accessToken as an argument.")
     print("Example: python3 clone.py myAccessToken")
     print("\nCreating an access Token")
     print(" > Login to GitHub in your browser")
@@ -11,8 +11,7 @@ if len(args) < 1:
     print(" > Click Generate New Token")
     print(" > Add a note > select the repo scope > generate token")
     quit()
-username = args[0]
-accessToken = args[1]
+accessToken = args[0]
 repos = methods.getRepos(accessToken)
 for repo in repos:
     methods.cloneRepo(repo)

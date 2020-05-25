@@ -4,9 +4,9 @@ Python script to clone all my repos on GitHub, makes it easier on me for setting
 
 **Usage**
 clone this repo
-`git clone https://github.com/joeysnclr/Clone-All-GitHub-Repos.git`
+```git clone https://github.com/joeysnclr/Clone-All-GitHub-Repos.git```
 run clone.py with an access token as an argument
-`python3 Clone-All-GitHub-Repos/clone.py yourAccessTokenHere`
+```python3 Clone-All-GitHub-Repos/clone.py yourAccessTokenHere```
 
 **Creating a GitHub access token**
 Login to GitHub in your browser

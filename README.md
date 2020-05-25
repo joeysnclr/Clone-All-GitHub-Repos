@@ -3,6 +3,7 @@
 Python script to clone all my repos on GitHub, makes it easier on me for setting up a remote development server.
 
 **Usage**
+
 clone this repo
 
 ```git clone https://github.com/joeysnclr/Clone-All-GitHub-Repos.git```
@@ -14,9 +15,13 @@ run clone.py with an access token as an argument
 
 **Creating a GitHub access token**
 
+
 Login to GitHub in your browser
+
 Navigate [here](https://github.com/settings/tokens)
+
 Click Generate New Token
+
 Add a note > select the repo scope > generate token
 
 

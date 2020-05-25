@@ -1,5 +1,7 @@
 import sys
 import methods
+from github import Github
+
 
 args = sys.argv[1:] # first arg is filename
 if len(args) < 1:
@@ -12,7 +14,10 @@ if len(args) < 1:
     print(" > Add a note > select the repo scope > generate token")
     quit()
 accessToken = args[0]
-repos = methods.getRepos(accessToken)
+
+print("Retrieving your GitHub repositories")
+gh = Github(accessToken)
+repos = gh.get_user().get_repos()
 for repo in repos:
     methods.cloneRepo(repo)
 print("Successfully cloned all of your GitHub repositories")

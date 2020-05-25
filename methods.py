@@ -1,13 +1,6 @@
 import os
-from github import Github
 from getpass import getpass
-
-
-
-def getRepos(accessToken):
-    print("Retrieving your GitHub repositories")
-    gh = Github(accessToken)
-    return gh.get_user().get_repos()
+    
 
 def cloneRepo(repo):
     print("Cloning {}".format(repo.name))
